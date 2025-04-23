@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Sonika Ramesh</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience & Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certificates">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Sonika Ramesh</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience & Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#certificates" onclick="toggleMenu()">Certifications</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/about-pic1.jpg" alt="Sonika Ramesh profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Sonika Ramesh</h1>
+        <p class="section__text__p2">Data Scientist</p>
+        <h3>M. Tech Artificial Intelligence (2024-26)</h3>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Resume.pdf')"
+          >
+            Resume
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/sonika-ramesh-bb4a09210'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/iamsonuram'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/profile-pic.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Internship Experience</h3>
+              <p>6 months<br />Data Science Intern</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.E in AI and ML<br/>Bangalore Institute of Technology</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              With a strong foundation in Artificial Intelligence from my Bachelor's studies, I am now expanding my expertise through advanced education and hands-on experience. 
+              My work as a Data Scientist and Machine Learning Engineer focuses on developing AI-driven solutions that drive innovation and solve real-world challenges.
+              I am committed to continuous growth, staying at the forefront of AI advancements, and applying state-of-the-art technologies to deliver impactful results. 
+              My goal is to harness AI's potential to create intelligent, scalable, and effective solutions across industries.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/SQLGenie.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">SQL Genie</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/iamsonuram/SQLGenie_Streamlit'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://sqlgenie-sonikaramesh.streamlit.app/'"
+              >
+                Try it out
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Churn_Analysis.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h3 class="experience-sub-title project-title">Customer Churn Prediction & Analysis Dashboard</h3>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/iamsonuram/Churn_Analysis'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://app.powerbi.com/groups/me/reports/0f3c5c5f-0ebd-4ff8-9375-9326e5544051/eff2d53c426deca04e9b?experience=power-bi'"
+              >
+                Check it out
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Container_Damage.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Damage Detection with YOLOv8</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/iamsonuram/ShippingContainer_Damage_Detection'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://sqlgenie-sonikaramesh.streamlit.app'"
+              >
+                Try it out
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/prime.png"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Prime Video Analytics Dashboard</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/iamsonuram/Prime-Video-Content-Dashboard'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://app.powerbi.com/links/gowyqKVrMT?ctid=474565c1-bca4-4295-a2f5-b0c7dbf2591c&pbi_source=linkShare'"
+                >
+                  Check it out
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/hugo.png"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h3 class="experience-sub-title project-title">Hugo Chatbot</h3>
+              <h4>In Progress</h4>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/iamsonuram/Hugo_Chatbot'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href=' '"
+                >
+                  Will be there soon
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/data_wizard.png"
+                  alt="Project 3"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Dataprep Wizard</h2>
+              <h4>In Progress</h4>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/iamsonuram/Dataprep_Wizard'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://dataprep-sonikaramesh.streamlit.app/'"
+                >
+                  Try it out
+                </button>
+              </div>
+            </div>
+          </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience and Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Experience</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Aiqwip</h3>
+                  <h4>Data Science Intern</h4> 
+                  <h5>Mar, 2024 - July, 2024</h5>
+                  <p>Generative AI, OpenAI, Model Fine-Tuning, Conversational AI</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Patenti Technology Solutions Pvt. Ltd.</h3>
+                  <h4>ML Intern</h4>
+                  <h5>Dec, 2023 - Feb, 2024</h5>
+                  <p>NLP, Python, Text Summarization, Technical Documentation</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Prinston Smart Engineers</h3>
+                  <h4>AI & IoT Intern</h4>
+                  <h5>June, 2023 - Sept, 2023</h5>
+                  <p>Machine Learning, Classification, Regression, Python, scikit-learn, TensorFlow</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>YantroMitra Learning Technologies</h3>
+                  <h4>AI&IoT Intern (R&D)</h4>
+                  <h5>Mar, 2023 - May, 2023</h5>
+                  <p>IoT, AI, Home Automation, Health Monitoring</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Technical Expertise</h2>
+            <div class="skills-section">
+              <article>
+                <img
+                  src="./assets/bulb.jpg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3 class="skill-category-title">Programming & Frameworks</h3>
+                  <div class="skills-grid">
+                    <p>• Python</p>
+                    <p>• SQL</p>
+                    <p>• scikit-learn</p>
+                    <p>• Matplotlib</p>
+                    <p>• Streamlit</p>
+                    <p>• Jupyter Notebook</p>
+                  </div>
+                </div>
+              </article>
+              
+              <article>
+                <img
+                  src="./assets/bulb.jpg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3 class="skill-category-title">Data Science & Tools</h3>
+                  <div class="skills-grid">
+                    <p>• Data Analysis</p>
+                    <p>• Data Visualization</p>
+                    <p>• SQL</p>
+                    <p>• Power BI</p>
+                  </div>
+                </div>
+              </article>
+
+              <article>
+                <img
+                src="./assets/bulb.jpg"
+                alt="Experience icon"
+                class="icon"
+              />
+                <div>
+                  <h3 class="skill-category-title">Machine Learning</h3>
+                  <div class="skills-grid">
+                    <p>• Classification Algorithms</p>
+                    <p>• Regression Algorithms</p>
+                    <p>• Decision Tree</p>
+                    <p>• Game Playing</p>
+                  </div>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/bulb.jpg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3 class="skill-category-title">Web Development</h3>
+                  <div class="skills-grid">
+                    <p>• HTML</p>
+                    <p>• CSS</p>
+                    <p>• JavaScript</p>
+                    <p>• Bootstrap</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#certificates'"
+      />
+    </section>
+    <section id="certificates">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Certifications</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">          
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/pyth101.png"
+                alt="Certificate 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Python 101 for Datascience</h2>
+            <h4>IBM</h4>
+            <h4>Jan, 2025</h4>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://drive.google.com/file/d/1uPiNpj-LuiMltqKW6gnZI1HQyslaEugp/view?usp=drive_link'"
+              >
+                View Certificate
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/sql.png"
+                alt="Certificate 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">SQL and Relational Database 101</h2>
+            <h4>IBM</h4>
+            <h4>Jan, 2025</h4>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://drive.google.com/file/d/19lIVyN_M3BdzMRW1tBaq-CutN6FuBzrY/view?usp=drive_link'"
+              >
+                View Certificate
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/genai.png"
+                alt="Certificate 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">GenAI Job Simulation</h2>
+            <h4>Forage, BCG</h4>
+            <h4>Aug, 2024</h4>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://drive.google.com/file/d/13Qx7UfLN0Mih03v04bUJB5ziGlzqIyBn/view?usp=drive_link'"
+              >
+                View Certificate
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="about-containers">  
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/ML_Train.png"
+                alt="Certificate 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Machine Learning</h2>
+            <h4>Internship Studio</h4>
+            <h4>May, 2024</h4>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://drive.google.com/file/d/1BY2Q7dhk-am-yBRd0-uvBJ2c7Oby4jS-/view?usp=drive_link'"
+              >
+                View Certificate
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/DA.png"
+                alt="Certificate 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Data Analytics</h2>
+            <h4>Internship Studio</h4>
+            <h4>May, 2024</h4>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://drive.google.com/file/d/1lSvQmwjDRWqKrYZh4Cr5ED4Lwm_10gGm/view?usp=drive_link'"
+              >
+                View Certificate
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/skl.png"
+                alt="Certificate 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Hands-on Machine Learning with Scikit-learn and TensorFlow 2.0</h2>
+            <h4>Infosys Springboard</h4>
+            <h4>July, 2023</h4>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://drive.google.com/file/d/1atkz2oNVH9wq8Hpff3f6qM7kRQ9O3soZ/view?usp=drive_link'"
+              >
+                View Certificate
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Python_Funda.png"
+                alt="Certificate 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Python Fundamentals</h2>
+            <h4>Infosys Springboard</h4>
+            <h4>Dec, 2022</h4>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://drive.google.com/file/d/11T5EWZA0Vq89-GyY0WtZ0D86uB3Tvyok/view?usp=drive_link'"
+              >
+                View Certificate
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/AI.png"
+                alt="Certificate 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Introduction to AI</h2>
+            <h4>Infosys Springboard</h4>
+            <h4>Dec, 2022</h4>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://drive.google.com/file/d/1Ny0IyJlTP6pls1D71kIY7sWlouieCmCl/view?usp=drive_link'"
+              >
+                View Certificate
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/ML.png"
+                alt="Certificate 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Introduction to ML</h2>
+            <h4>Infosys Springboard</h4>
+            <h4>Dec, 2022</h4>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://drive.google.com/file/d/10yaohRtfYoHgeUN5a8zs6md1gr0uR60-/view?usp=drive_link'"
+              >
+                View Certificate
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:sonupranu04@gmail.com">sonupranu04@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/sonika-ramesh-bb4a09210">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience & Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certificates">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright © 2025 Sonika Ramesh. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
